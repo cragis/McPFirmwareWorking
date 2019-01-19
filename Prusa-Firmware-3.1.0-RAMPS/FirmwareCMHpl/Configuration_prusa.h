@@ -19,6 +19,7 @@ GENERAL SETTINGS
 #define MOTHERBOARD BOARD_MKS_BASE
 
 #define HEATBED_V2
+#define STEEL_SHEET
 
 // Prusa Single extruder multiple material suport
 //#define SNMM
