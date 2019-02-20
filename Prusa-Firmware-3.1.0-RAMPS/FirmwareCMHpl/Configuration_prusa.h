@@ -13,7 +13,7 @@ GENERAL SETTINGS
 #define DEVELOPER
 
 // Printer name
-#define CUSTOM_MENDEL_NAME "McP"
+#define CUSTOM_MENDEL_NAME "^^("
 
 // Electronics
 #define MOTHERBOARD BOARD_MKS_BASE
@@ -53,8 +53,8 @@ const bool Z_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // Travel limits after homing
 #define X_MAX_POS 250
 #define X_MIN_POS 0
-#define Y_MAX_POS 210
-#define Y_MIN_POS -2.2
+#define Y_MAX_POS 205
+#define Y_MIN_POS -5
 #define Z_MAX_POS 250
 #define Z_MIN_POS 0.15
 
@@ -70,7 +70,7 @@ const bool Z_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {3000, 3000, 800, 0}  // set the homing speeds (mm/min)
 
-#define DEFAULT_MAX_FEEDRATE          {500, 500, 12, 120}    // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 12, 90}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {9000,9000,500,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          1500    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
@@ -121,15 +121,6 @@ EXTRUDER SETTINGS
 
 
 
-
-#ifdef SNMM
-//#define BOWDEN_LENGTH	408
-#define BOWDEN_LENGTH 433 //default total length for filament fast loading part; max length for extrusion is 465 mm!; this length can be adjusted in service menu
-#define FIL_LOAD_LENGTH 102 //length for loading filament into the nozzle
-#define FIL_COOLING 10 //length for cooling moves
-#define E_MOTOR_LOW_CURRENT 350 // current for PRUSAY code
-#define E_MOTOR_HIGH_CURRENT 700 //current for unloading filament, stop print, PRUSAY ramming
-#endif //SNMM
 
 //#define DIS //for measuring bed heigth and PINDa detection heigth relative to auto home point, experimental function
 
