@@ -2464,6 +2464,13 @@ const char * const MSG_RIGHT_LANG_TABLE[LANG_NUM] PROGMEM = {
 	MSG_RIGHT_DE
 };
 
+const char MSG_PLACE_STEEL_SHEET_EN[] PROGMEM = "Please place steel sheet on heatbed.";
+const char MSG_PLACE_STEEL_SHEET_CZ[] PROGMEM = "Umistete prosim tiskovy plat na heatbed";
+const char * const MSG_PLACE_STEEL_SHEET_LANG_TABLE[LANG_NUM] PROGMEM = {
+  MSG_PLACE_STEEL_SHEET_EN,
+  MSG_PLACE_STEEL_SHEET_CZ
+};
+
 const char MSG_SD_CANT_ENTER_SUBDIR_EN[] PROGMEM = "Cannot enter subdir: ";
 const char * const MSG_SD_CANT_ENTER_SUBDIR_LANG_TABLE[1] PROGMEM = {
 	MSG_SD_CANT_ENTER_SUBDIR_EN

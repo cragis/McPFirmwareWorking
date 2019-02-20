@@ -717,6 +717,10 @@ extern const char* const MSG_Z_MIN_LANG_TABLE[1];
 extern const char* const WELCOME_MSG_LANG_TABLE[LANG_NUM];
 #define WELCOME_MSG LANG_TABLE_SELECT(WELCOME_MSG_LANG_TABLE)
 
+extern const char* const MSG_PLACE_STEEL_SHEET_LANG_TABLE[LANG_NUM];
+#define MSG_PLACE_STEEL_SHEET LANG_TABLE_SELECT(MSG_PLACE_STEEL_SHEET_LANG_TABLE)
+
+
 extern char* CAT2(const char *s1,const char *s2);
 extern char* CAT4(const char *s1,const char *s2,const char *s3,const char *s4);
 

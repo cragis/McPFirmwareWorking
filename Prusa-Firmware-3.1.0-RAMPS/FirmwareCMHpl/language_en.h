@@ -341,4 +341,12 @@
 #define(lenght=20, lines=2) MSG_PLA_FILAMENT_LOADED				"Is PLA filament loaded?"
 #define(lenght=20, lines=4) MSG_PLEASE_LOAD_PLA					"Please load PLA filament first."
 #define(length=20, lines=8) MSG_FILE_CNT						"Some files will not be sorted. Max. No. of files in 1 folder for sorting is 100."
+
+
+#define(length=20, lines=4) MSG_PLACE_STEEL_SHEET        "Please place steel sheet on heatbed."
+#define(length=20, lines=4) MSG_REMOVE_STEEL_SHEET        "Please remove steel sheet from heatbed."
+#define(length=20, lines=2) MSG_CALIBRATE_Z_AUTO        "Calibrating Z"
+#define(length=20, lines=2) MSG_STEEL_SHEET_CHECK       "Is steel sheet on heatbed?"
+
+
 #define(length=25, lines=1) MSG_M117_V2_CALIBRATION				"M117 First layer cal."

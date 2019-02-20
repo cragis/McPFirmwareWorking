@@ -90,6 +90,8 @@ static bool old_z_max_endstop=false;
 static bool check_endstops = true;
 static bool check_z_endstop = false;
 
+static bool z_endstop_invert = false;
+
 int8_t SilentMode;
 
 volatile long count_position[NUM_AXIS] = { 0, 0, 0, 0};
@@ -261,6 +263,11 @@ bool enable_z_endstop(bool check)
   check_z_endstop = check;
   endstop_z_hit=false;
   return old;
+}
+
+void invert_z_endstop(bool endstop_invert)
+{
+  z_endstop_invert = endstop_invert;
 }
 
 //         __________________________
