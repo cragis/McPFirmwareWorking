@@ -36,11 +36,8 @@ AXIS SETTINGS
 *------------------------------------*/
 
 // Steps per unit {X,Y,Z,E}
-#ifdef SNMM
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,800,270}
-#else
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,800,270}
-#endif
+
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {200,200,800,300}
 
 
 // Endstop inverting
@@ -104,20 +101,14 @@ EXTRUDER SETTINGS
 #define HEATER_2_MAXTEMP 305
 #define BED_MAXTEMP 150
 
-#if defined(E3D_PT100_EXTRUDER_WITH_AMP) || defined(E3D_PT100_EXTRUDER_NO_AMP)
-// Define PID constants for extruder with PT100
-#define  DEFAULT_Kp 21.70
-#define  DEFAULT_Ki 1.60
-#define  DEFAULT_Kd 73.76
-#else
 // Define PID constants for extruder
 #define  DEFAULT_Kp 9.0
-#define  DEFAULT_Ki 0.4
-#define  DEFAULT_Kd 40.0
-#endif
+#define  DEFAULT_Ki 0.5
+#define  DEFAULT_Kd 60.0
+
 
 // Extrude mintemp
-#define EXTRUDE_MINTEMP 130
+#define EXTRUDE_MINTEMP 170
 
 // Extruder cooling fans
 #define EXTRUDER_0_AUTO_FAN_PIN   7
@@ -264,16 +255,12 @@ BED SETTINGS
 #ifdef PIDTEMPBED
 //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
 //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-#if defined(E3D_PT100_BED_WITH_AMP) || defined(E3D_PT100_BED_NO_AMP)
-// Define PID constants for extruder with PT100
-#define  DEFAULT_bedKp 21.70
-#define  DEFAULT_bedKi 1.60
-#define  DEFAULT_bedKd 73.76
-#else
+
 #define  DEFAULT_bedKp 102.66
 #define  DEFAULT_bedKi 5.72
 #define  DEFAULT_bedKd 460.43
-#endif
+
+
 
 //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
 //from pidautotune
@@ -305,8 +292,8 @@ PREHEAT SETTINGS
 #define PP_PREHEAT_HPB_TEMP 100
 #define PP_PREHEAT_FAN_SPEED 0 
 
-#define PET_PREHEAT_HOTEND_TEMP 240
-#define PET_PREHEAT_HPB_TEMP 90
+#define PET_PREHEAT_HOTEND_TEMP 245
+#define PET_PREHEAT_HPB_TEMP 85
 #define PET_PREHEAT_FAN_SPEED 0 
 
 #define FLEX_PREHEAT_HOTEND_TEMP 230
